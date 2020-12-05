@@ -19,6 +19,9 @@ import Tema15 from "./components/Tema15";
 import Tema16 from "./components/Tema16";
 import Tema17 from "./components/Tema17";
 import Tema18 from "./components/Tema18";
+import Tema19 from "./components/Tema19";
+import Tema20 from "./components/Tema20";
+import Tema21 from "./components/Tema21";
 import Home from "./components/Home";
 import "./App.css";
 
@@ -104,6 +107,18 @@ function App(props) {
                   Tema 18:
                   <Link to="/tema18">Protocolo UDP</Link>
                 </li>
+                <li>
+                  Tema 19:
+                  <Link to="/tema19">Capa de red</Link>
+                </li>
+                <li>
+                  Tema 20:
+                  <Link to="/tema20">Capa enlace de datos</Link>
+                </li>
+                <li>
+                  Tema 21:
+                  <Link to="/tema21">Capa fisica</Link>
+                </li>
               </ul>
             </div>
           </header>
@@ -163,6 +178,15 @@ function App(props) {
             </Route>
             <Route exact path="/tema18">
               <Tema18 />
+            </Route>
+            <Route exact path="/tema19">
+              <Tema19 />
+            </Route>
+            <Route exact path="/tema20">
+              <Tema20 />
+            </Route>
+            <Route exact path="/tema21">
+              <Tema21 />
             </Route>
             <Route exact path="/">
               <Home />
